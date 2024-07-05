@@ -1,0 +1,115 @@
+body{
+    font-family: "Sono", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(112, 64, 64, 0.5); /*for transparent background */
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container{
+    height: 69%;
+    width: 30%;
+    background-color: rgba(243, 243, 229, 0.957);
+    margin: auto;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+@media (min-width: 319px) and (max-width: 650px){
+    .form-container{
+        width: 300px;
+    }
+}
+@media (min-width: 651px) and (max-width: 849px){
+    .form-container{
+        width: 600px;
+    }
+}
+@media (min-width: 850px) and (max-width: 1000px){
+    .form-container{
+        width: 800px;
+    }
+}
+@media (max-height: 720px){
+    .form-container{
+        height: 500px;
+    }
+}
+@media (min-height: 721px) and (max-height: 1000px){
+    .form-container{
+        height: 600px;
+    }
+}
+
+
+
+
+.form-container h1{
+    text-align: center;
+    color: #1899ff;
+    font-size: 1.5rem;
+}
+
+.close-button {
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    font-size: 2.7rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+.form-container>span:hover{
+    border: 1px solid rgba(51, 105, 255, 0.943);
+    width: 7%;
+    text-align: center;
+    border-radius: 3px;
+}
+
+
+#popupForm{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 3%;
+    padding: 7px;
+    font-size: 1rem;
+}
+
+form input, form button, form select{
+    padding: 3%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border: 1px solid hsla(0, 4%, 65%, 0.966);
+}
+
+form input{
+    font-size: 1.12rem;
+}
+
+#popupForm button{
+    margin-top: 10%;
+    background: #f35622;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+form button:hover {
+    background: #fc5507;
+}
+
+
